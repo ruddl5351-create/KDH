@@ -323,8 +323,8 @@ footer{text-align:center;font-size:11px;color:var(--muted);margin-top:24px;line-
 <!-- 도어락 -->
 <section class="screen" id="s5">
   <div class="stagehead"><span class="no">마지막 문</span><span style="font-size:13px;color:var(--muted)">현관 도어락</span></div>
-  <div class="talk"><div class="av"></div><div class="bub"><span class="who">달토끼 반달</span>조각은 다 모았네. 근데 나도 순서는 몰라. <em>오늘이 음력 며칠이더라?</em></div></div>
-  <p style="font-size:13px;color:var(--muted);margin-bottom:4px">모은 조각 (순서 없음)</p>
+  <div class="talk"><div class="av"></div><div class="bub"><span class="who">달토끼 반달</span>조각은 다 모았네. 근데 나도 순서는 몰라. <em>추석이 음력 몇 월 며칠이더라?</em></div></div>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:4px">모은 조각 (순서 없음) · <b style="color:var(--gold)">추석 날짜</b>로 배열하세요</p>
   <div class="frag" id="frag"></div>
   <div class="safe">
     <div class="pin" id="pin"><div></div><div></div><div></div><div></div></div>
@@ -844,7 +844,7 @@ function openLock(){
     rew++; info();
     document.querySelector('.safe').classList.add('shake');
     setTimeout(function(){document.querySelector('.safe').classList.remove('shake')},400);
-    say('v4','열리지 않습니다. 조각 네 개의 <b>순서</b>가 틀렸습니다. 한가위가 음력 며칠인지 떠올려 보세요.',false);
+    say('v4','열리지 않습니다. 조각 네 개의 <b>순서</b>가 틀렸습니다. <b>추석은 음력 8월 15일</b>입니다. 이 날짜를 네 자리로 만들어 보세요.',false);
     buf=''; drawPin();
   }
 }
